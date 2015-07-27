@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<style>
+			body{
+				min-width:800px;
+			}
+		</style>
+	</head>
+		<link href="css/bootstrap.css" rel="stylesheet">
+	<body>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.jeditable.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="popup.js">	</script>
+		<div class="container-fluid">
+			<h4>ScreenScraper</h4>
+			<p>Grab data from a website. Put the CSS selector for the parent elements you want to grab. Then add columns for the children for those elements.</p>
+			<a href="#" class="btn btn-primary" id="downloadJSON" download="data.json">Download JSON</a>
+			<a href="#" class="btn btn-primary" id="downloadCSV" download="data.csv">Download CSV</a>
+			<form style="margin-top:5px;" class="form-inline">
+				    <label class="control-label" for="selectorInput">Selector</label>
+				      <input type="text" id="selectorInput" placeholder="Selector">
+				</form>
+
+			<a href="#" class="btn" id="addColumn">Add Column</a>
+			<table class="table">
+				<thead>
+						<tr>
+
+						</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+
+			</table>
+		</div>
+	</body>
+
+</html>
